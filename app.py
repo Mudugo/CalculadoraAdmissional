@@ -199,9 +199,9 @@ def index():
                 mimetype="application/zip",
             )
         except ValueError:
-            return render_template("documento.html", error="O valor de VT deve ser um número válido.")
+            return render_template("index.html", error="O valor de VT deve ser um número válido.")
 
-    return render_template("documento.html")
+    return render_template("index.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
