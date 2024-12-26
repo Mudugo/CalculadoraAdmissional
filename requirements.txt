@@ -1,3 +1,6 @@
+reportlab==4.2.5
+
+
 absl-py==2.1.0
 aiohappyeyeballs==2.4.3
 aiohttp==3.10.10
@@ -130,13 +133,10 @@ python-dateutil==2.9.0.post0
 python-docx==1.1.2
 pytweening==1.2.0
 pytz==2024.2
-pywhatkit==5.4
-pywin32==308
-pywin32-ctypes==0.2.3
 PyYAML==6.0.2
 qrcode==8.0
 regex==2024.9.11
-reportlab==4.2.5
+
 requests==2.32.3
 rfc3986==1.5.0
 rich==13.9.2
