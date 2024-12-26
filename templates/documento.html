@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefícios Admissionais - BRANDONE</title>
+    <style>
+        /* Resetando estilos padrões */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow: auto; /* Adiciona rolagem ao body */
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.2em; /* Ajuste do tamanho do título */
+            color: #333;
+            margin-bottom: 30px; /* Aumento da margem para maior espaçamento */
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+            overflow-y: auto; /* Adiciona rolagem ao formulário se necessário */
+            max-height: 80vh; /* Limita a altura máxima do formulário */
+        }
+
+        label {
+            font-size: 1.1em;
+            margin-bottom: 10px; /* Aumento do espaçamento entre rótulos */
+            display: block;
+            color: #555;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px; /* Aumento do padding para melhor usabilidade */
+            margin-bottom: 15px; /* Redução do espaçamento entre os campos */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            background-color: #fafafa;
+            transition: border 0.3s ease;
+        }
+
+        input:focus, select:focus {
+            border-color: #6c63ff;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #6c63ff;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            padding: 12px;
+            transition: background-color 0.3s ease;
+            font-size: 1.1em; /* Aumento da fonte do botão */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5a52d2;
+        }
+
+        input[type="submit"]:active {
+            background-color: #4c47b8;
+        }
+
+        /* Estilo para dispositivos móveis */
+        @media (max-width: 768px) {
+            form {
+                width: 100%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8em; /* Ajuste do título em telas menores */
+            }
+
+            input, select {
+                padding: 10px; /* Ajuste do padding em telas menores */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Benefícios Admissionais - BRANDONE</h1>
+        <form action="/" method="POST">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="empresa">Empresa:</label>
+            <select name="empresa" id="empresa" required>
+                <option value="BRD1">BRD1</option>
+                <option value="BRD2">BRD2</option>
+                <option value="BRD3">BRD3</option>
+                <option value="BRD4">BRD4</option>
+                <option value="BRD5">BRD5</option>
+                <option value="UNIT1">UNIT1</option>
+                <option value="UNIT2">UNIT2</option>
+                <option value="UNIT3">UNIT3</option>
+                <option value="UNIT4">UNIT4</option>
+                <option value="UNIT5">UNIT5</option>
+                <option value="UNIT6">UNIT6</option>
+                <option value="UNIT7">UNIT7</option>
+                <option value="UNIT8">UNIT8</option>
+                <option value="GAPE">GAPE</option>
+                <option value="GAPESERV">GAPESERV</option>
+                <option value="TRS">TRS</option>
+                <option value="PRAIA">PRAIA</option>
+            </select>
+
+            <label for="cliente">Cliente:</label>
+            <input type="text" id="cliente" name="cliente" required>
+
+            <label for="data_admissao">Data de Admissão:</label>
+            <input type="date" id="data_admissao" name="data_admissao" required>
+
+            <label for="escala">Escala de Trabalho:</label>
+            <select name="escala" id="escala" required>
+                <option value="12x36">12x36</option>
+                <option value="5x2">5x2</option>
+                <option value="4x2">4x2</option>
+                <option value="5x1">5x1</option>
+                <option value="6x1">6x1</option>
+            </select>
+
+            <label for="turno">Turno:</label>
+            <select name="turno" id="turno" required>
+                <option value="Diurno">Diurno</option>
+                <option value="Noturno">Noturno</option>
+            </select>
+
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo" required>
+
+            <label for="valor_vt">Valor VT diário:</label>
+            <input type="number" id="valor_vt" name="valor_vt" step="0.05" required>
+
+            <label for="banco">Banco:</label>
+            <input type="text" id="banco" name="banco" required>
+
+            <label for="tipo_pix">Tipo de chave Pix:</label>
+            <select name="tipo_pix" id="tipo_pix" required>
+                <option value="CPF">CPF</option>
+                <option value="Email">Email</option>
+                <option value="Telefone">Telefone</option>
+                <option value="Chave Aleatória">Chave Aleatória</option>
+            </select>
+
+            <label for="chave_pix">Chave Pix:</label>
+            <input type="text" id="chave_pix" name="chave_pix" required>
+
+            <input type="submit" value="Calcular">
+        </form>
+    </div>
+</body>
+</html>
