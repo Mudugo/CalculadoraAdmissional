@@ -1,7 +1,7 @@
 gunicorn==20.1.0
 Flask==2.3.3
-datetime
-calendar
-zipfile
-io
-reportlab
+datetime==3.11
+calendar==3.7
+zipfile==3.2
+io==3.3
+reportlab==4.2.5
