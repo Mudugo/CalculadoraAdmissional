@@ -1,6 +1,6 @@
 gunicorn==20.1.0
 Flask==2.3.3
-datetime==3.11
+datetime==5.5
 calendar==3.7
 zipfile==3.2
 io==3.3
